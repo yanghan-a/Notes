@@ -1,9 +1,48 @@
 # Part1
 
-![image-20241009234507814](.assets/image-20241009234507814.png)
+![image-20241016144137996](../assets/image-20241016144137996.png)
 
-![image-20241009234818109](/home/yh/桌面/notes/Notes/.assets/image-20241009234818109.png)
+
+
+![image-20241016144642803](../assets/image-20241016144642803.png)
+
+
+
+
 
 # Part2
 
-![image-20241009235101775](/home/yh/桌面/notes/Notes/.assets/image-20241009235101775.png)
+![image-20241016144827414](../assets/image-20241016144827414.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
