@@ -6,6 +6,8 @@
 
 [版本管理——github的使用_github版本管理-CSDN博客](https://blog.csdn.net/qq_31759493/article/details/109191996?ops_request_misc=%7B%22request%5Fid%22%3A%227B55F2B6-B8C3-41A8-9DF1-7682B6ED3EEE%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=7B55F2B6-B8C3-41A8-9DF1-7682B6ED3EEE&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-109191996-null-null.142^v100^pc_search_result_base2&utm_term=github版本控制&spm=1018.2226.3001.4187)
 
+[Git基础-git的历史版本查看与版本回退（版本切换）_git历史版本-CSDN博客](https://blog.csdn.net/qq_39505245/article/details/119788832)
+
 ## 基本功能
 
 Git常用命令
