@@ -22,15 +22,30 @@
 
 ### 安装ros
 
+wget http://fishros.com/install -O fishros && . fishros
+
 ### 安装edge
 
+```python
+sudo apt update
+sudo apt install microsoft-edge-stable
+```
+
+[如何在 Ubuntu 22.04 上安装 Microsoft Edge 浏览器 (linux-console.net)](https://cn.linux-console.net/?p=14889)
+
 ### 安装vscode
+
+wget http://fishros.com/install -O fishros && . fishros
 
 ### 安装typora
 
 ### 安装QQ
 
+wget http://fishros.com/install -O fishros && . fishros
+
 ### 安装微信
+
+wget http://fishros.com/install -O fishros && . fishros
 
 ### 安装clash
 
