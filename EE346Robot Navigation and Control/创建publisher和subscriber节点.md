@@ -40,6 +40,26 @@ $ echo $ROS_PACKAGE_PATH
 $ rospack find [package_name]
 ```
 
+查看功能包目录
+
+```
+$ rosls 功能包名字
+```
+
+编译单个功能包
+
+```
+$ rosmake 功能包1 功能包2 ...
+```
+
+安装依赖功能包
+
+```
+$ rosdep 依赖功能包
+```
+
+
+
 ## ros包的目录结构
 
 - ```
@@ -56,6 +76,22 @@ $ rospack find [package_name]
   ```
 
 每个目录下基本都有相应的CMakeists.txt文件
+
+查看功能包的依赖，功能包的依赖定义在package.xml中
+
+```sh
+$ rospack depends1 beginner_tutorials
+$ roscd beginner_tutorials
+$ cat package.xml
+```
+
+查看功能包的非直接依赖
+
+```sh
+$ rospack depends beginner_tutorials
+```
+
+
 
 ## 常用的关于话题的命令
 
@@ -101,13 +137,32 @@ rosmsg info msg名称
 
 查看msg具体的数据结构
 
+### 常用message的分类
+
+查看所有的message目录
+
+```
+rosmsg show tab
+```
+
+常用的主要是以下目录下的message
+
+```
+sensor_msgs/
+geometry_msgs/
+nav_msgs/
+std_msgs/
+```
 
 
 
+### 一些临时未分类的命令
 
+查看节点信息，
 
-
-
+```
+rosnode info 节点名
+```
 
 
 
