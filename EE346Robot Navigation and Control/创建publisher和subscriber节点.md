@@ -170,17 +170,25 @@ rosnode info 节点名
 
 
 
+## RQT相关
 
+### 安装
 
+```
+$ sudo apt-get install ros-noetic-rqt
+$ sudo apt-get install ros-noetic-rqt-common-plugins
 
+$ rosdep install rqt_plot
+```
 
+### 使用
 
+使用rqt_plot接话题名下的数据
 
-
-
-
-
-
+```
+$ rqt_plot /turtle1/pose/x:y:z
+$ rqt_plot /turtle1/pose/x /turtle1/pose/y /turtle1/pose/z
+```
 
 
 
