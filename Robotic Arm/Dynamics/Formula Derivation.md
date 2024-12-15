@@ -148,7 +148,51 @@ $\frac{d}{dt}(^OI_B) = {^O_B}R\cdot\frac{d}{dt}(^BI_B) + ^O\omega_B\times^OI_B$
 
 因此$^ON_B = ^O\omega_B\times^OI_B\cdot{^O\omega_B} + ^OI_B\cdot{^O\dot\omega_B}$
 
+### 牛顿-欧拉递推动力学方程
 
+递推动力学方程主要涉及线速度、角速度关系，线加速度、角加速度关系，牛顿方程、欧拉方程，力平衡、力矩平衡。
+
+#### 推导算法流程
+
+算法分为两部分：外推和内推
+
+外推涉及线速度、角速度关系，线加速度、角加速度关系，牛顿方程、欧拉方程。计算各个关节的速度、加速度和力
+
+内推涉及利用外推得到的速度、加速度和力结合力平衡和力矩平衡得到关节力矩计算值。
+
+#### 考虑重力因素
+
+考虑重力只需要令$^o\dot v_0 = G$即可，这等价于机器人正以1g的加速度向上做加速度运动。
+
+#### 实际例子
+
+在Craig书中有一个两连杆质量分布集中的例子，见书189页
+
+从该例子可以引出对动力学方程结构的讨论
+
+##### 状态空间方程
+
+动力学方程可以写成如下形式
+
+$\tau = M(\Theta)\ddot \Theta +V(\Theta,\dot\Theta)+G(\Theta)$
+
+$M(\Theta)$为nxn阶质量矩阵，对称且正定
+
+$V(\Theta)$为nx1阶的离心力和哥氏力矢量，离心力矢量就是形如$\dot\Theta^2$的项，哥氏力矢量就是形如$\dot\Theta_i\dot\Theta_j(i\ne j)$的项
+
+$G(\Theta)$为nx1阶重力矢量
+
+##### 位形状态空间方程
+
+将$V(\Theta,\dot\Theta )$拆分，动力学方程可以写成如下形式
+
+$\tau = M(\Theta)\ddot \Theta +B(\Theta)(\dot\Theta\dot\Theta)+C(\Theta)(\dot\Theta^2)+G(\Theta)$
+
+$B(\Theta)$是nxn(n-1)/2阶的哥氏力系数矩阵，$(\dot\Theta\dot\Theta)$是n(n-1)/2x1阶的关节速度积矢量
+
+$C(\Theta)$是nxn阶离心力系数矩阵，$(\dot\Theta^2)$是nx1阶矢量
+
+### 操作臂动力学的拉格朗日方程
 
 
 
