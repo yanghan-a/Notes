@@ -16,7 +16,7 @@
 
 $^A\Omega_C = {^A\Omega}_B + {^A_BR}^B\Omega_C$
 
-线速度
+线速度，坐标系C的原点的线速度
 
 $^AV_C = {^AV}_B + {^A\Omega_B\times{^A}P_B}+ {^A_B}R ^BV_C$
 
@@ -26,13 +26,13 @@ $^AV_C = {^AV}_B + {^A\Omega_B\times{^A}P_B}+ {^A_B}R ^BV_C$
 
 $^{j}\omega_{j+1} = {^j\omega}_j + ^j_{j+1}R\dot{\theta}_{j+1}{^{j+1}\hat{Z}_{j+1}}$
 
-$^{j+1}\omega_{j+1} = ^{j+1}_{j}R{^j\omega}_j + \dot{\theta}_{j+1}{^{j+1}\hat{Z}_{j+1}}$
+$^{j+1}\omega_{j+1} = {^{j+1}_{j}R}{^j\omega}_j + \dot{\theta}_{j+1}{^{j+1}\hat{Z}_{j+1}}$
 
 线速度
 
 $^{j}v_{j+1} = {^jv}_j + ^j\omega_{j}\times^jP_{j+1}$
 
-$^{j+1}v_{j+1} = ^{j+1}_{j}R{^jv}_j + ^{j+1}_{j}R^j\omega_{j}\times^jP_{j+1}$
+$^{j+1}v_{j+1} = {^{j+1}_{j}R}({^jv}_j + ^j\omega_{j}\times^jP_{j+1})$
 
 ### 加速度和角加速度相关
 
@@ -43,6 +43,8 @@ $^{j+1}v_{j+1} = ^{j+1}_{j}R{^jv}_j + ^{j+1}_{j}R^j\omega_{j}\times^jP_{j+1}$
 $\frac{d}{dt}(^A_BR{^BQ}) = {^A\Omega_B\times^A_BR{^B}Q}+ {^A_B}R ^BV_Q$
 
 这里我们会得到一个很重要的结论就是矩阵与向量乘积的微分$\frac{d}{dt}(^A_BR{^BQ})$可以写成${^AV}_B + {^A\Omega_B\times^A_BR{^B}Q}+ {^A_B}R ^BV_Q$的形式。
+
+**2025年4月15日前来更新**，这里我们应该从求导的角度理解，旋转矩阵的导数$\dot R = \Omega \times R$，因此就很容易得到下面的结论了
 
 进而我们可以推出下面的结论
 
@@ -96,7 +98,7 @@ $^j\dot{v}_{C_j} = ^j\dot{v}_j + {^j\dot\omega_j\times^jP_{C_j}} + {^j\omega_j\t
 
 角加速度
 
-$^j\dot\omega_{j+1} = {^j\dot\omega}_j + {^j\omega_j\times\dot\theta_{j+1}{^{j+1}\hat Z_{j+1}}}+ ^{j}_{j+1}R\ddot\theta_{j+1}{^{j+1}\hat Z_{j+1}}$
+$^j\dot\omega_{j+1} = {^j\dot\omega}_j + {^j\omega_j\times {^j_{j+1}R}\dot\theta_{j+1}{^{j+1}\hat Z_{j+1}}}+ ^{j}_{j+1}R\ddot\theta_{j+1}{^{j+1}\hat Z_{j+1}}$
 
 $^{j+1}\dot\omega_{j+1} = ^{j+1}_jR{^j\dot\omega}_j + ^{j+1}_jR{^j\omega_j\times\dot\theta_{j+1}{^{j+1}\hat Z_{j+1}}}+ \ddot\theta_{j+1}{^{j+1}\hat Z_{j+1}}$
 
